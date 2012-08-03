@@ -1,0 +1,27 @@
+{
+  "name": "canonical-host",
+  "version": "0.0.0",
+  "description": "Redirect users to the canonical hostname for your site.",
+  "main": "canon.js",
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.3.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/isaacs/canonical-host"
+  },
+  "keywords": [
+    "redirect",
+    "canonical",
+    "canon",
+    "hostname",
+    "host",
+    "header"
+  ],
+  "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+  "license": "BSD"
+}
