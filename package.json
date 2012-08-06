@@ -1,6 +1,6 @@
 {
   "name": "canonical-host",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Redirect users to the canonical hostname for your site.",
   "main": "canon.js",
   "dependencies": {},
