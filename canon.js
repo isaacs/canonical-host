@@ -72,7 +72,7 @@ function redirector (statusCode, hosts, len) {
         case 4: // similar to 6.
           // This is a close enough match.  Redirect here.
           redir = spec
-          break FOR
+          continue
 
         case 3: // port and proto, but not hostname
         case 2: // only port, but not hostname/ssl
