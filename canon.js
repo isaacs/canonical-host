@@ -70,8 +70,9 @@ function redirector (statusCode, hosts, len) {
         case 6: // hostName and host, but not protocol
         case 5: // hostname and proto, but not port, and it was specified
         case 4: // similar to 6.
-          // This is a close enough match.  Redirect here.
-          redir = spec
+          // This is a close enough match.  Redirect here,
+          // unless another canonical match already called dibs.
+          if (!redir) redir = spec
           continue
 
         case 3: // port and proto, but not hostname
