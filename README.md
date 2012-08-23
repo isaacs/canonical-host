@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/isaacs/canonical-host.png)](http://travis-ci.org/isaacs/canonical-host)
 # canonical-host
 
 Redirect users to the canonical hostname for your site.
