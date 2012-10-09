@@ -24,7 +24,7 @@ function canon (hosts) {
 }
 
 function redirector (statusCode, hosts, len) {
-  return function cannon (req, res) {
+  return function cannon (req, res, cb) {
     var h = req.headers.host
     // not sending a hostname is not at ALL canonical!
     if (!h) {
@@ -65,6 +65,7 @@ function redirector (statusCode, hosts, len) {
       switch (mask) {
         case 7:
           // user has sent canonical hostname!  horray!
+          if (typeof cb === 'function') cb()
           return false
 
         case 6: // hostName and host, but not protocol
