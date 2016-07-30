@@ -5,8 +5,8 @@
   "main": "canon.js",
   "dependencies": {},
   "devDependencies": {
-    "tap": "~0.3.0",
-    "request": "~2.10.0"
+    "tap": "~6.2.0",
+    "request": "~2.74.0"
   },
   "scripts": {
     "test": "tap test/*.js"
